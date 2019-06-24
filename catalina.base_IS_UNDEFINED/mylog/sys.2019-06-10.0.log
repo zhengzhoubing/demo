@@ -1,0 +1,4 @@
+2019-06-10 15:57:30,118 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT t.template_type_id, t.up_template_type_id, t.type_name, t.type_desc, t.priority, create_date, create_staff, update_date, update_staff FROM template_type_t t WHERE 1=1 AND t.template_type_id = ? 
+2019-06-10 15:57:30,307 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-10 15:57:30,387 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-10 15:57:30,388 INFO (MyBatisTest.java:41)- TemplateType{templateTypeId=1, upTemplateTypeId=0, typeName='套餐费', upTypeName='null', typeDesc='套餐费', statusCd='null', statusName='null', createDate='2018-05-21 00:00:00.0', createStaff=18378, updateDate='2018-05-21 00:00:00.0', updateStaff=18378, priority=1, children=null}

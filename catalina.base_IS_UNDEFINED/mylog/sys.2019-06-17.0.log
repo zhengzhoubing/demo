@@ -1,0 +1,59 @@
+2019-06-17 15:47:05,625 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 6344 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 15:47:05,630 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 15:47:05,634 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-06-17 16:08:03,191 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 7376 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 16:08:03,191 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 16:08:03,191 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 16:08:09,783 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 7.031 seconds (JVM running for 7.64)
+2019-06-17 16:13:00,691 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 4324 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 16:13:00,692 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 16:13:00,692 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 16:13:04,265 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 3.839 seconds (JVM running for 4.442)
+2019-06-17 16:14:02,648 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 8976 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 16:14:02,648 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 16:14:02,648 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 16:14:06,199 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 3.866 seconds (JVM running for 4.528)
+2019-06-17 16:51:44,700 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 8540 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 16:51:44,700 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 16:51:44,700 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 16:51:48,445 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 4.061 seconds (JVM running for 4.656)
+2019-06-17 16:52:42,164 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT t.template_type_id, t.up_template_type_id, t.type_name, t.type_desc, t.priority, create_date, create_staff, update_date, update_staff FROM template_type_t t WHERE 1=1 AND t.template_type_id = ? 
+2019-06-17 16:52:42,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-17 16:52:42,291 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-17 16:53:42,099 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 8820 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 16:53:42,100 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 16:53:42,102 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 16:53:45,564 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 3.891 seconds (JVM running for 4.485)
+2019-06-17 16:53:49,604 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT t.template_type_id, t.up_template_type_id, t.type_name, t.type_desc, t.priority, create_date, create_staff, update_date, update_staff FROM template_type_t t WHERE 1=1 AND t.template_type_id = ? 
+2019-06-17 16:53:49,641 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-17 16:53:49,657 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-17 16:55:27,158 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 8996 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 16:55:27,159 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 16:55:27,159 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 16:55:30,696 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 3.836 seconds (JVM running for 4.436)
+2019-06-17 16:55:35,398 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT t.template_type_id, t.up_template_type_id, t.type_name, t.type_desc, t.priority, create_date, create_staff, update_date, update_staff FROM template_type_t t WHERE 1=1 AND t.template_type_id = ? 
+2019-06-17 16:55:35,435 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-17 16:55:35,452 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-17 16:57:19,223 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 8628 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 16:57:19,224 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 16:57:19,224 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 16:57:23,184 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 4.3 seconds (JVM running for 5.78)
+2019-06-17 16:57:34,679 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT t.template_type_id, t.up_template_type_id, t.type_name, t.type_desc, t.priority, create_date, create_staff, update_date, update_staff FROM template_type_t t WHERE 1=1 AND t.template_type_id = ? 
+2019-06-17 16:57:34,724 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-17 16:57:34,743 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-17 17:04:37,286 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 8412 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 17:04:37,287 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 17:04:37,287 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 17:04:41,337 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 4.58 seconds (JVM running for 5.302)
+2019-06-17 17:05:38,714 INFO (StartupInfoLogger.java:50)- Starting DemoApplication on 31CF11GDLZFWN13 with PID 4964 (E:\project\demo\target\classes started by Administrator in E:\project\demo)
+2019-06-17 17:05:38,715 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-17 17:05:38,715 INFO (SpringApplication.java:679)- The following profiles are active: dev
+2019-06-17 17:05:42,838 INFO (StartupInfoLogger.java:59)- Started DemoApplication in 4.488 seconds (JVM running for 5.311)
+2019-06-17 17:05:45,896 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT t.template_type_id, t.up_template_type_id, t.type_name, t.type_desc, t.priority, create_date, create_staff, update_date, update_staff FROM template_type_t t WHERE 1=1 AND t.template_type_id = ? 
+2019-06-17 17:05:45,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-17 17:05:45,958 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-17 17:05:45,959 INFO (TemplateTypeController.java:32)- TemplateType{templateTypeId=1, upTemplateTypeId=0, typeName='套餐费', upTypeName='null', typeDesc='套餐费', statusCd='null', statusName='null', createDate='2018-05-21 00:00:00.0', createStaff=18378, updateDate='2018-05-21 00:00:00.0', updateStaff=18378, priority=null, children=null}
+2019-06-17 17:12:11,027 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT t.template_type_id, t.up_template_type_id, t.type_name, t.type_desc, t.priority, create_date, create_staff, update_date, update_staff FROM template_type_t t WHERE 1=1 AND t.template_type_id = ? 
+2019-06-17 17:12:11,029 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Long)
+2019-06-17 17:12:11,033 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-06-17 17:12:11,034 INFO (TemplateTypeController.java:32)- TemplateType{templateTypeId=1, upTemplateTypeId=0, typeName='套餐费', upTypeName='null', typeDesc='套餐费', statusCd='null', statusName='null', createDate='2018-05-21 00:00:00.0', createStaff=18378, updateDate='2018-05-21 00:00:00.0', updateStaff=18378, priority=null, children=null}
