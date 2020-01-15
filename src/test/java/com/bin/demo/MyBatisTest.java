@@ -1,7 +1,5 @@
 package com.bin.demo;
 
-import com.bin.demo.Mapper.MyMapper;
-import com.bin.demo.entity.TemplateType;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -26,7 +24,7 @@ public class MyBatisTest {
 
     @Test
     public void test() throws IOException {
-        String resource = "mybatis-config.xml";
+        /*String resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         //不会自动提交数据
@@ -34,14 +32,14 @@ public class MyBatisTest {
         try {
             MyMapper myMapper = session.getMapper(MyMapper.class);
 
-//            TemplateType templateType = session.selectOne("com.bin.demo.Mapper.MyMapper.qryTemplateType", 1);
+//            TemplateType templateType = session.selectOne("com.bin.demo.dao.MyMapper.qryTemplateType", 1);
             TemplateType templateType = myMapper.qryTemplateType(1);
 //            System.out.println(templateType);
             Logger logger = LoggerFactory.getLogger(MyBatisTest.class);
             logger.info(templateType.toString());
         } finally {
             session.close();
-        }
+        }*/
     }
 
     @Test

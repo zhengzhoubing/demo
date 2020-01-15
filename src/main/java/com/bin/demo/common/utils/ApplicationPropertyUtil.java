@@ -18,7 +18,7 @@ public class ApplicationPropertyUtil {
         InputStream in = null;
         try
         {
-            in = ApplicationPropertyUtil.class.getClassLoader().getResourceAsStream("application.properties");
+            in = ApplicationPropertyUtil.class.getClassLoader().getResourceAsStream("application.yml");
             props.load(in);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

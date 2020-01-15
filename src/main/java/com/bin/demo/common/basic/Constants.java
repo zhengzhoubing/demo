@@ -18,6 +18,25 @@ public class Constants {
     public static final int ALL_TRIM = 3;
     /** 默认URL编码字符集*/
     public static final String DEFAULT_URL_ENCODING = "UTF-8";
-
+    //默认失败编码
+    public static final int DEFAULT_FAIL_CODE = -1;
+    //默认错误提示语
+    public static final String DEFAULT_FAIL_MESSAGE="系统出错了，请联系管理员";
+    //发生异常信息可以错误
+    public static final String SQL_EXCEPTION_MESSAGE_PREFIX = "java.sql";
+    //数据库发生异常默认报错
+    public static final String SQL_EXCEPTION_DEFAULT_MESSAGE = "数据库发生异常";
+    //服务实例不可用
+    public static final String NO_INSTANCE_AVAILABLE = "No instances available for";
+    //服务实例不可用错误信息
+    public static final String NO_INSTANCE_AVAILABLE_MESSAGE = "服务实例不可用";
+    //默认成功编码
+    public static final int DEFAULT_SUCCESS_CODE = 0;
+    //成功标志
+    public static final String KEY_SUCCESS = "success";
+    //提示信息
+    public static final String KEY_MESSAGE = "message";
+    //错误码
+    public static final String KEY_CODE = "code";
 
 }

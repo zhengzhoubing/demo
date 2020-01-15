@@ -1,0 +1,58 @@
+debug: true
+
+server:
+  servlet:
+    context-path: /bin
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.122.1:3306/demo?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialSize: 1 #初始连接数
+    minIdle: 1 #最小连接数
+    maxActive: 50 #最大连接数
+    maxWait: 60000 #获取连接最大等待时间
+    timeBetweenEvictionRunsMillis: 60000 #1、destroy线程检测连接时间间隔 2、testWhileIdle的依据
+    minEvictableIdleTimeMillis: 30000 #Destory线程中如果检测到当前连接的最后活跃时间和当前时间的差值大于minEvictableIdleTimeMillis，则关闭当前连接
+    validationQuery: select 'x'
+    testWhileIdle: true #建议配置为true，不影响性能，并且保证安全性。申请连接的时候检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效。
+    testOnBorrow: false #申请连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能。
+    testOnReturn: false #归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+    poolPreparedStatements: false #是否缓存preparedStatement
+    maxOpenPreparedStatements: -1 #要启用PSCache，必须配置大于0，当大于0时poolPreparedStatements自动触发修改为true
+    removeAbandoned: false #启动连接回收
+    removeAbandonedTimeout: 1800 #单位秒
+    logAbandoned: false #程序在回收连接的同时会打印日志
+    filters: stat #统计过滤器
+  redis:
+    host: 192.168.122.1
+    database: 9
+    port: 6379
+    timeout: 20000
+    jedis:
+      pool.max-active: 50
+      pool.max-idle: 10
+      pool.max-wait: 3600
+      pool.min-idle: 1
+      pool.testOnBorrow: false
+      pool.testOnReturn: false
+      pool.testWhileIdle: true
+      pool.numTestsPerEvictionRun: 10
+      pool.timeBetweenEvictionRunsMillis: 60000
+
+logging:
+  config: classpath:logback.xml
+  level.org.springframework.boot.autoconfigure: ERROR
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.bin.demo.entity
+  mapper-locations: classpath*:*Mapper.xml
+
+
