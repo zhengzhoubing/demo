@@ -33,17 +33,20 @@ spring:
     host: 192.168.122.1
     database: 9
     port: 6379
+    password: redis
     timeout: 20000
     jedis:
-      pool.max-active: 50
-      pool.max-idle: 10
-      pool.max-wait: 3600
-      pool.min-idle: 1
-      pool.testOnBorrow: false
-      pool.testOnReturn: false
-      pool.testWhileIdle: true
-      pool.numTestsPerEvictionRun: 10
-      pool.timeBetweenEvictionRunsMillis: 60000
+      pool:
+        max-total: 100
+        max-idle: 10
+        max-wait-millis: 1000
+        min-idle: 1
+        min-evictableIdle-time-millis: 300000
+        testOnBorrow: false
+        testOnReturn: false
+        testWhileIdle: true
+        numTestsPerEvictionRun: 10
+        timeBetweenEvictionRunsMillis: 60000
 
 logging:
   config: classpath:logback.xml
