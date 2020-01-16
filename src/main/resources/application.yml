@@ -13,27 +13,27 @@ spring:
     password: root
     url: jdbc:mysql://192.168.122.1:3306/demo?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=GMT%2B8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true
     driver-class-name: com.mysql.cj.jdbc.Driver
-    initialSize: 1 #³õÊ¼Á¬½ÓÊı
-    minIdle: 1 #×îĞ¡Á¬½ÓÊı
-    maxActive: 50 #×î´óÁ¬½ÓÊı
-    maxWait: 60000 #»ñÈ¡Á¬½Ó×î´óµÈ´ıÊ±¼ä
-    timeBetweenEvictionRunsMillis: 60000 #1¡¢destroyÏß³Ì¼ì²âÁ¬½ÓÊ±¼ä¼ä¸ô 2¡¢testWhileIdleµÄÒÀ¾İ
-    minEvictableIdleTimeMillis: 30000 #DestoryÏß³ÌÖĞÈç¹û¼ì²âµ½µ±Ç°Á¬½ÓµÄ×îºó»îÔ¾Ê±¼äºÍµ±Ç°Ê±¼äµÄ²îÖµ´óÓÚminEvictableIdleTimeMillis£¬Ôò¹Ø±Õµ±Ç°Á¬½Ó
+    initialSize: 1 #åˆå§‹è¿æ¥æ•°
+    minIdle: 1 #æœ€å°è¿æ¥æ•°
+    maxActive: 50 #æœ€å¤§è¿æ¥æ•°
+    maxWait: 60000 #è·å–è¿æ¥æœ€å¤§ç­‰å¾…æ—¶é—´
+    timeBetweenEvictionRunsMillis: 60000 #1ã€destroyçº¿ç¨‹æ£€æµ‹è¿æ¥æ—¶é—´é—´éš” 2ã€testWhileIdleçš„ä¾æ®
+    minEvictableIdleTimeMillis: 30000 #Destoryçº¿ç¨‹ä¸­å¦‚æœæ£€æµ‹åˆ°å½“å‰è¿æ¥çš„æœ€åæ´»è·ƒæ—¶é—´å’Œå½“å‰æ—¶é—´çš„å·®å€¼å¤§äºminEvictableIdleTimeMillisï¼Œåˆ™å…³é—­å½“å‰è¿æ¥
     validationQuery: select 'x'
-    testWhileIdle: true #½¨ÒéÅäÖÃÎªtrue£¬²»Ó°ÏìĞÔÄÜ£¬²¢ÇÒ±£Ö¤°²È«ĞÔ¡£ÉêÇëÁ¬½ÓµÄÊ±ºò¼ì²â£¬Èç¹û¿ÕÏĞÊ±¼ä´óÓÚtimeBetweenEvictionRunsMillis£¬Ö´ĞĞvalidationQuery¼ì²âÁ¬½ÓÊÇ·ñÓĞĞ§¡£
-    testOnBorrow: false #ÉêÇëÁ¬½ÓÊ±Ö´ĞĞvalidationQuery¼ì²âÁ¬½ÓÊÇ·ñÓĞĞ§£¬×öÁËÕâ¸öÅäÖÃ»á½µµÍĞÔÄÜ¡£
-    testOnReturn: false #¹é»¹Á¬½ÓÊ±Ö´ĞĞvalidationQuery¼ì²âÁ¬½ÓÊÇ·ñÓĞĞ§£¬×öÁËÕâ¸öÅäÖÃ»á½µµÍĞÔÄÜ
-    poolPreparedStatements: false #ÊÇ·ñ»º´æpreparedStatement
-    maxOpenPreparedStatements: -1 #ÒªÆôÓÃPSCache£¬±ØĞëÅäÖÃ´óÓÚ0£¬µ±´óÓÚ0Ê±poolPreparedStatements×Ô¶¯´¥·¢ĞŞ¸ÄÎªtrue
-    removeAbandoned: false #Æô¶¯Á¬½Ó»ØÊÕ
-    removeAbandonedTimeout: 1800 #µ¥Î»Ãë
-    logAbandoned: false #³ÌĞòÔÚ»ØÊÕÁ¬½ÓµÄÍ¬Ê±»á´òÓ¡ÈÕÖ¾
-    filters: stat #Í³¼Æ¹ıÂËÆ÷
+    testWhileIdle: true #å»ºè®®é…ç½®ä¸ºtrueï¼Œä¸å½±å“æ€§èƒ½ï¼Œå¹¶ä¸”ä¿è¯å®‰å…¨æ€§ã€‚ç”³è¯·è¿æ¥çš„æ—¶å€™æ£€æµ‹ï¼Œå¦‚æœç©ºé—²æ—¶é—´å¤§äºtimeBetweenEvictionRunsMillisï¼Œæ‰§è¡ŒvalidationQueryæ£€æµ‹è¿æ¥æ˜¯å¦æœ‰æ•ˆã€‚
+    testOnBorrow: false #ç”³è¯·è¿æ¥æ—¶æ‰§è¡ŒvalidationQueryæ£€æµ‹è¿æ¥æ˜¯å¦æœ‰æ•ˆï¼Œåšäº†è¿™ä¸ªé…ç½®ä¼šé™ä½æ€§èƒ½ã€‚
+    testOnReturn: false #å½’è¿˜è¿æ¥æ—¶æ‰§è¡ŒvalidationQueryæ£€æµ‹è¿æ¥æ˜¯å¦æœ‰æ•ˆï¼Œåšäº†è¿™ä¸ªé…ç½®ä¼šé™ä½æ€§èƒ½
+    poolPreparedStatements: false #æ˜¯å¦ç¼“å­˜preparedStatement
+    maxOpenPreparedStatements: -1 #è¦å¯ç”¨PSCacheï¼Œå¿…é¡»é…ç½®å¤§äº0ï¼Œå½“å¤§äº0æ—¶poolPreparedStatementsè‡ªåŠ¨è§¦å‘ä¿®æ”¹ä¸ºtrue
+    removeAbandoned: false #å¯åŠ¨è¿æ¥å›æ”¶
+    removeAbandonedTimeout: 1800 #å•ä½ç§’
+    logAbandoned: false #ç¨‹åºåœ¨å›æ”¶è¿æ¥çš„åŒæ—¶ä¼šæ‰“å°æ—¥å¿—
+    filters: stat #ç»Ÿè®¡è¿‡æ»¤å™¨
   redis:
     host: 192.168.122.1
     database: 9
     port: 6379
-    password: redis
+    password: redis #ä¿®æ”¹redis.confé…ç½®æ–‡ä»¶ï¼Œå°†ç»‘å®šçš„ipåœ°å€ç«¯å£å·ç»™æ³¨é‡Šï¼ŒLinuxä¸Šçš„rediså¤„äºå®‰å…¨ä¿æŠ¤æ¨¡å¼ï¼Œè¿™å°±è®©ä½ æ— æ³•ä»è™šæ‹Ÿæœºå¤–éƒ¨å»è½»æ¾å»ºç«‹è¿æ¥ï¼Œè¦åŠ ä¸Šå®‰å…¨è®¤è¯
     timeout: 20000
     jedis:
       pool:

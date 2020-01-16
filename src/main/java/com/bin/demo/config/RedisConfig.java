@@ -2,6 +2,8 @@ package com.bin.demo.config;
 
 import com.bin.demo.common.redis.RedisHelper;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -15,6 +17,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
+@AutoConfigureAfter(RedisAutoConfiguration.class)
 public class RedisConfig {
     @Value("${spring.redis.host}")
     public String host;
@@ -109,22 +112,22 @@ public class RedisConfig {
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
         //如果不配置Serializer，那么存储的时候缺省使用String，如果用User类型存储，那么会提示错误User can't cast to String！
+        redisTemplate.setConnectionFactory(redisConnectionFactory);
         redisTemplate.setKeySerializer(new StringRedisSerializer());
+        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
         redisTemplate.setHashKeySerializer(new StringRedisSerializer());
         redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
-        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
-        // 开启事务
-//        redisTemplate.setEnableTransactionSupport(true);
+        redisTemplate.afterPropertiesSet();
         redisTemplate.setConnectionFactory(redisConnectionFactory);
         return redisTemplate;
     }
 
     /**
      * 注入封装RedisTemplate
-     * @Title: redisUtil
-     * @return RedisUtil
-     * @autor lpl
-     * @date 2017年12月21日
+     * @Title: redisHelper
+     * @return RedisHelper
+     * @autor zzb
+     * @date 2020年01月15日
      * @throws
      */
     @Bean(name = "redisHelper")
