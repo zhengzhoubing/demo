@@ -1,11 +1,7 @@
 package com.bin.demo;
 
 import cn.hutool.core.date.Week;
-import com.bin.demo.common.utils.Util;
 import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * package: com.bin.demo
@@ -24,6 +20,7 @@ public class StringStrTest {
         String str2 = nodeId.substring(nodeId.length()- 16);
         System.out.println(nodeId.substring(nodeId.length()- 3));
         System.out.println(nodeId.equals(str1 + str2));
+        System.out.println("20190222".substring(0, 4));
     }
 
     @Test
