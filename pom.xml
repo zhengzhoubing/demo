@@ -5,8 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.2.7.RELEASE</version>
     </parent>
     <groupId>com.bin</groupId>
     <artifactId>demo</artifactId>
@@ -16,6 +15,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <log4j2.version>2.17.2</log4j2.version>
     </properties>
 
     <dependencies>
